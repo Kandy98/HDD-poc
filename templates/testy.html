@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create
+{% endblock %}
+
+{% block header_container %}
+	<a href="{{ url_for('index') }}"><h1 class="title">Create new concept</h1></a>
+	<nav>
+        <ul>
+            <li><a href="{{ url_for('add') }}">Search</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<h1>Add a new concept </h1>
+		<form action="" method="POST">
+			<article>
+				<p>New concept's name <input type="text" name="cid"></p>
+				<p>New concept's definition <input type="text" name="c_d"></p>
+				<p>New concept's type <input type="text" name="type"></p>
+				<p>
+					<button type="submit">Submit</button>
+				</p>
+			</article>
+		</form>
+	</section>
+{% endblock %}
+					

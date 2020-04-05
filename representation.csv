@@ -1,0 +1,21 @@
+representation,definition
+Adhaar,unique ID
+Adhaar card,physical unique ID proof
+NUID,national unique ID
+Alternate unique identification type,Alternate unique indentification type
+Alternate unique identification number,Alternate unique indentification number
+PAN card,One of alternate unique indentifiaction number
+DL,Driving licence as alternate ID
+Passport,Passport ad alternate unique ID
+Full name,Full name of patient/ beneficary/ care provider
+Name,Name of person
+Gender,Gender of person
+Sex,Gender assigned to a person
+Marital status,Marital status of person
+Married?,Person married or not
+Facility name,Name of the healthcare facility 
+Hospital name,Name of the hospital
+Care provider name,Name of the care provider
+Doctor's name,Name of the attending doctor
+Procedure code,Standard code for a procedure
+Operation code,Code for operation performed

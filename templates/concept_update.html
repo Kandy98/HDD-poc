@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+Update
+{% endblock %}
+
+{% block header_container %}
+	<a href="{{ url_for('index') }}"><h1 class="title">Update</h1></a>
+	<nav>
+        <ul>
+            <li><a href="{{ url_for('add') }}">Search</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<h1>Update concept </h1>
+		<form action="" method="POST">
+			<article>
+				<p>Enter concept's ncid <input type="text" name="id"></p>
+				<p>Enter "-" if field is not to be updated</p>
+				<p>Update cid <input type="text" name="cid"></p>
+				<p>Update definition <input type="text" name="c_d"></p>
+				<p>Update type <input type="text" name="type"></p>
+				<p>Update status <input type="text" name="status"></p>
+				<p>Update version <input type="text" name="vnd"></p>
+
+				<p>
+					<button type="submit">Submit</button>
+				</p>
+			</article>
+		</form>
+	</section>
+{% endblock %}
+					

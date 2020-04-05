@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Select --
+{% endblock %}
+
+{% block header_container %}
+	<a href="{{ url_for('index') }}"><h1 class="title">National Health Data Dictionary</h1></a>
+	<nav>
+        <ul>
+            <li><a href="{{ url_for('add') }}">Search</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+	{% for each in data %}
+    	{{ each.ncid }} {{','}} {{ each.cid }} {{','}} {{ each.concept_definition }} {{','}} {{ each.type }} {{','}} {{each.status}} {{','}} {{each.data_type}} {{','}} {{each.data_size}} {{','}} {{vnd}} {{','}} {{doud}}<br>
+    {% endfor %}
+{% endblock %}
+					

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Thermos -- Add URL
+{% endblock %}
+
+{% block header_container %}
+	<a href="{{ url_for('index') }}"><h1 class="title">National Health Data Dictionary</h1></a>
+	<nav>
+        <ul>
+            <li><a href="{{ url_for('add') }}">Search</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<h1>Add new url</h1>
+		<form action="" method="POST">
+			<article>
+				<p>
+					Please enter your bookmark here <input type="text" name="url">
+				</p>
+				<p>
+					<button type="submit">Submit</button>
+				</p>
+			</article>
+		</form>
+	</section>
+{% endblock %}
+					

@@ -1,0 +1,56 @@
+cid,definition,Type,status
+Adhaar,Unique indentification of person,1,1
+Alternate unique identification type,"This describes the type of the ID proof which will be used in case the UID number (also called as Aadhaar number) is not available with a person. e.g. values for this data element are PAN card, Passport Number, Voter ID, National Population Registration Number, Others etc. It can also be used in addition to the UID.",2,1
+Alternate unique identification number,"Alternate Unique Identification Number (UID) is any identity which may be used if primary Unique Identification number is not available with a person, or in addition to the primary Unique ID.",1,1
+Full name,Full name of the beneficiary,1,1
+Gender,Gender classification of beneficiary,2,1
+Marital status,Marital status of the beneficiary,2,1
+Economic status code,This data element helps to identify a person’s economic status with respect to government policies.,2,1
+Family member person name,Name of any family member Person.,1,1
+Family member's date of birth,Person’s date of birth The date of birth is typically a key patient identifier variable and used to enable computation of age at the effective date of any other data element. It is assumed to be unique and fixed throughout the patient’s lifetime,1,1
+Family member UID number,"Unique Person Identifier (UID) of family member. Number to be allocated by UIDAI to every Indian Citizen, which would enable interoperability of data related to a person in various domains.",1,1
+Family member relationship,Relationship of Family Member to Patient or other Family Member.,2,1
+Patient's age,"This data element is to be used when patient DOB is not known or in addition to DOB. Age is to be automatically calculated if date of birth is entered/available; once the patient’s DOB is available, all client systems must automatically calculate “age” of the patient",1,1
+Patient's address,Address of the patient,1,1
+Patient's mobile no.,Mobile number of patient,1,1
+Insured card ID,An identifier assigned to each member covered under a health insurance policy,1,1
+Insurance policy ID,An identifier assigned to each health policy subscribed.,1,1
+Insurance policy type,This data element indicates whether the subscribed health insurance policy is an individual subscription or a group subscription.,2,1
+Health Insurance coverage begin date,The begin date of the health plan coverage of the individual. These dates may not apply equally to all benefits included in the health plan coverage. Some benefits may have waiting periods for coverage to be effective which results in a different benefit begin date.,1,1
+Health Insurance coverage end date,The end date of the health plan coverage of the individual. The purpose of providing this information in the registration/ medication summary is to better inform patients about their health coverage.,1,1
+Source of payment,The different kinds of sources that can pay for the healthcare expenditure.,2,1
+Unique facility identification number,Unique Facility Identification assigned to healthcare facility providing care to patient. This code will be unique to identify and search a facility (both in public or private organizations) based on unique ID.,1,1
+Facility name,Name of the facility in english,1,1
+Facility type,"Code describing the type of facility such as district hospital, sub center etc.",2,1
+Facility address,Address of Facility,1,1
+Facility address type,This data element is extended in health domain to include more address type values. The value list has been coded using a character code to identify the address type.,2,1
+Facility service code,Code of the service offered under this facility. This data element will be repeated for each service provided in the facility.,2,1
+Facility speciality code,Code of the specialty linked with the services offered by the facility. This data element will be repeated for every service provided in the facility,2,1
+Facility operational status,The status of the facility will indicate its operational status,2,1
+Facility Beds,Total number of beds available in the facility. This will include all beds available with different departments.,2,1
+Facility bed type,"The term “hospital bed” is used to describe the amount of bed space in a health care facility or hospital, as the capacity for the number of patients at the facility is measured in available “beds.” Such as Sanctioned, Available etc.",2,1
+Payer Identification number,A unique Identifier for an insurance company. This is applicable when the sponsoring entity is an insurance company.,2,1
+Payer type,Type of the payer comapny,2,1
+Payer company name,Name of the Insurance company issuing the health insurance policy.,1,1
+Payer registered address,registered address of the payer,1,1
+Health plan type,Category of health plan subscribed as classified by IRDA/Regulatory body.,3,1
+Health plan code,Unique code for the helath plan,2,1
+Health plan name,Name of the health plan,1,1
+Package identifier,Identifier code to uniquely identify a package of inventory items.,2,1
+Package item name,Package refers to a group of service items with sub-limits.,1,1
+Package item price,Price of the service package item,3,1
+Unique individual healthcare provider ID,Unique ID assigned to a person who is providing healthcare directly to the patient. This ID can be assigned by a central or state level Health Registration Authority e.g. Medical Registration number assigned to every health provider by Indian Medical Council.,1,1
+Unique individual healthcare provider ID type,Code qualifying different coding schema assigned to health care provider ID by different institutional domains.,2,1
+Care provider name,Name of care provider,1,1
+Care provider address,Address of care provider,1,1
+Care provider mobile number,Mobile number of care provider,1,1
+Health service provider role code,"Health Service Provider role uses a coded value to classify health service providers according to the role they play in the healthcare of the patient and comes from a very limited set of values. The purpose of this data element is to express the information often required during patient registration, identifying the patient’s primary care provider, the referring physician or other consultant involved in the care of the patient.",2,1
+Health servie provider type,"Health service provider type classifies providers according to the type of license or accreditation they hold (e.g. physician, dentist, pharmacist, etc.) or the service they provide.",2,1
+Diagnosis code,Unique code for diagnosis,3,1
+Diagnosis name,Name for the diagnosis,1,1
+Diagnosis type,Type of diagnosis performed,2,1
+Procedure code,Unique code for the procedure,2,1
+Procedure name,Name of the procedure,1,1
+Procedure type,Type of procedure performed,2,1
+Medication code,Unique code for medication,2,1
+Medication type,Type of medication,2,1

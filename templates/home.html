@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+HDD - home
+{% endblock %}
+
+{% block content %}
+    <article>
+        <header>
+            <h1>Services</h1>
+            <h3>Following are the serives avaiable: </h3>
+
+        </header>
+        <section>
+            <p>Concepts :</p>
+            <li><a href="{{ url_for('concept_create') }}">Create</a></li>
+            <li><a href="{{ url_for('concept_read') }}">Read</a></li>
+            <li><a href="{{ url_for('concept_update') }}">Update</a></li>
+            <li><a href="{{ url_for('concept_delete') }}">Delete</a></li>
+            <li><a href="{{ url_for('get_all_concept') }}">Read all concepts</a></li>
+            <li><a href="{{ url_for('concept_getConceptByName') }}">Search concept by name</a></li>
+            <li><a href="{{ url_for('concept_getRepresentationsByConcept') }}">Search representations by concept ID</a></li>
+
+            <p>Concept Representations :</p>
+            <li><a href="{{ url_for('concept_representations_create') }}">Create</a></li>
+            <li><a href="{{ url_for('concept_representations_read') }}">Read</a></li>
+            <li><a href="{{ url_for('concept_representations_update') }}">Update</a></li>
+            <li><a href="{{ url_for('concept_representations_delete') }}">Delete</a></li>
+
+            <li><a href="{{ url_for('concept_representations_getcfr') }}">Get Concept from representation</a></li>
+            <li><a href="{{ url_for('concept_representations_getar') }}">Get all representations</a></li>
+            <li><a href="{{ url_for('concept_representations_getarbc') }}">Search representation by context</a></li>
+
+        </section>
+    </article>
+{% endblock %}
+
+{% block sidebar %}
+	<aside>
+		<h3>What is HDD?</h3>
+		<p>A health data dictionary, or metadata repository for national metadata standards for the health, community services and housing assistance sectors. as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format."
+		</p>
+    </aside>
+{% endblock %}
+
+{% block header_container %}
+	<a href="{{ url_for('index') }}"><h1 class="title">National Health Data Dictionary</h1></a>
+	<nav>
+        <ul>
+            <li><a href="{{ url_for('add') }}">Search</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+
+
+
+
